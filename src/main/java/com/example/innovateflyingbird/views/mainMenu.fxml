@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="mainMenu" fx:id="mainMenu" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.innovateflyingbird.views.mainMenuController">
+   <children>
+      <ImageView fx:id="gameLogo" fitHeight="110.0" fitWidth="335.0" layoutX="431.0" layoutY="22.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/logo.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="188.0" fitWidth="696.0" layoutX="-1.0" layoutY="486.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/land.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="188.0" fitWidth="696.0" layoutX="563.0" layoutY="486.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/land.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="112.0" fitWidth="110.0" layoutX="37.0" layoutY="64.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/bird1_2.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="loginBtn" layoutX="558.0" layoutY="159.0" mnemonicParsing="false" onAction="#loginButton" prefHeight="65.0" prefWidth="130.0" text="登录" />
+      <Button fx:id="exitBtn" layoutX="557.0" layoutY="353.0" mnemonicParsing="false" onAction="#exitButton" prefHeight="65.0" prefWidth="130.0" text="退出" />
+      <Button fx:id="regBtn" layoutX="556.0" layoutY="254.0" mnemonicParsing="false" onAction="#regButton" prefHeight="65.0" prefWidth="130.0" text="注册" />
+      <Label layoutX="37.0" layoutY="445.0" prefHeight="29.0" prefWidth="118.0" text="v0.0.1 a  @Krystall" />
+   </children>
+</AnchorPane>

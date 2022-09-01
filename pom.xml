@@ -60,7 +60,7 @@
                         <!-- Default configuration for running with: mvn clean javafx:run -->
                         <id>default-cli</id>
                         <configuration>
-                            <mainClass>com.example.innovateflyingbird/com.example.innovateflyingbird.HelloApplication
+                            <mainClass>com.example.innovateflyingbird/com.example.innovateflyingbird.mainApplication
                             </mainClass>
                             <launcher>app</launcher>
                             <jlinkZipName>app</jlinkZipName>
@@ -73,5 +73,18 @@
                 </executions>
             </plugin>
         </plugins>
+
+
+        <resources>
+            <resource>
+                <directory>src/main/java</directory>
+                <includes>
+                    <include>**/*.fxml</include>
+                    <include>**/*.png</include>
+                    <include>**/*.css</include>
+                </includes>
+            </resource>
+        </resources>
+
     </build>
 </project>
