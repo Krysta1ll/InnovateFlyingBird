@@ -1,7 +1,7 @@
 module com.example.innovateflyingbird {
     requires javafx.controls;
     requires javafx.fxml;
-
+    requires java.sql;
 
     opens com.example.innovateflyingbird to javafx.fxml;
     opens com.example.innovateflyingbird.views to javafx.fxml;

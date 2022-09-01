@@ -1,5 +1,8 @@
 com/example/innovateflyingbird/mainApplication.class
 com/example/innovateflyingbird/views/mainMenuController.class
 module-info.class
+com/example/innovateflyingbird/gaming/Configs.class
 com/example/innovateflyingbird/views/regViewController.class
 com/example/innovateflyingbird/views/loginViewController.class
+com/example/innovateflyingbird/views/gamingViewController.class
+com/example/innovateflyingbird/util/ConnectionUtil.class
