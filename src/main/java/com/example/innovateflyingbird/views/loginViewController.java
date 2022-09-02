@@ -1,10 +1,12 @@
 
     package com.example.innovateflyingbird.views;
 
+import com.example.innovateflyingbird.dao.UserDAO;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
+import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.AnchorPane;
@@ -25,16 +27,28 @@ import java.io.IOException;
 
         @FXML
         void loginConfirmBtn(ActionEvent event) {
-            Stage gaming=new Stage();
-            try {
-                AnchorPane anchorPane= FXMLLoader.load(this.getClass().getResource("gamingView.fxml"));
-                Scene scene=new Scene(anchorPane);
-                gaming.setScene(scene);
-                gaming.show();
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
+         String user,password;
+         user=userId.getText();
+         password=userPwd.getText();
+         UserDAO userDAO=new UserDAO();
 
+         if(userDAO.loginUser(user,password)) {
+
+             Stage gaming = new Stage();
+             try {
+                 AnchorPane anchorPane = FXMLLoader.load(this.getClass().getResource("gamingView.fxml"));
+                 Scene scene = new Scene(anchorPane);
+                 gaming.setScene(scene);
+                 gaming.show();
+             } catch (IOException e) {
+                 e.printStackTrace();
+             }
+         }
+            Alert alert =new Alert(Alert.AlertType.INFORMATION);
+            alert.setContentText("登录成功");
+            alert.show();
+            Stage stage=(Stage) loginConfirm.getScene().getWindow();
+            stage.close();
 
 
         }

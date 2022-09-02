@@ -11,3 +11,6 @@
 
 
 }
+#startBtn{
+    -fx-background-image: url("images/start_button.png");
+}

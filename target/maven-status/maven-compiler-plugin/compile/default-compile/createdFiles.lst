@@ -1,6 +1,9 @@
 com/example/innovateflyingbird/mainApplication.class
+com/example/innovateflyingbird/format/passwordFormat.class
+com/example/innovateflyingbird/format/emailFormat.class
 com/example/innovateflyingbird/views/mainMenuController.class
 module-info.class
+com/example/innovateflyingbird/dao/UserDAO.class
 com/example/innovateflyingbird/gaming/Configs.class
 com/example/innovateflyingbird/views/regViewController.class
 com/example/innovateflyingbird/views/loginViewController.class

@@ -15,7 +15,7 @@
       <Label layoutX="40.0" layoutY="197.0" text="确认密码" />
       <TextField fx:id="userName" layoutX="102.0" layoutY="59.0" promptText="用户名" />
       <TextField fx:id="userEmail" layoutX="102.0" layoutY="108.0" promptText="xxx@yyy.com" />
-      <PasswordField fx:id="userPwd" layoutX="102.0" layoutY="153.0" />
-      <PasswordField fx:id="confirmPwd" layoutX="102.0" layoutY="193.0" />
+      <PasswordField fx:id="userPwd" layoutX="102.0" layoutY="153.0" promptText="大小写字母/数字/特殊符号" />
+      <PasswordField fx:id="confirmPwd" layoutX="102.0" layoutY="193.0" promptText="确认密码" />
    </children>
 </AnchorPane>
