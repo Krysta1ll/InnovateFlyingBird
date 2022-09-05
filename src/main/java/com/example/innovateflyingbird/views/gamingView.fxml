@@ -30,7 +30,7 @@
             </image>
         </ImageView>
         <Button fx:id="exitBtn" layoutX="352.0" layoutY="361.0" mnemonicParsing="false" onAction="#exitButton" prefHeight="65.0" prefWidth="130.0" text="退出" />
-        <Label layoutX="37.0" layoutY="445.0" prefHeight="29.0" prefWidth="118.0" text="v0.0.1 a  @Krystall" />
+        <Label layoutX="37.0" layoutY="445.0" prefHeight="29.0" prefWidth="118.0" text="v1.0.0b  @Krystall" />
       <Button id="regConfirmBtn" fx:id="gameStartBtn" layoutX="336.0" layoutY="230.0" mnemonicParsing="false" onAction="#gameStart" prefHeight="93.0" prefWidth="161.0" stylesheets="@style.css" />
       <Label layoutX="35.0" layoutY="557.0" text="用户已登录" textFill="#00ff0d">
          <font>
@@ -38,5 +38,6 @@
          </font>
       </Label>
       <Button layoutX="632.0" layoutY="148.0" mnemonicParsing="false" onAction="#rankingList" prefHeight="49.0" prefWidth="118.0" text="排行榜" />
+      <Label fx:id="userLabel" layoutX="138.0" layoutY="552.0" prefHeight="35.0" prefWidth="143.0" text="user_lable" />
     </children>
 </AnchorPane>

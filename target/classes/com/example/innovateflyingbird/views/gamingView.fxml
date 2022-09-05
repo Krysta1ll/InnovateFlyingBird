@@ -38,5 +38,6 @@
          </font>
       </Label>
       <Button layoutX="632.0" layoutY="148.0" mnemonicParsing="false" onAction="#rankingList" prefHeight="49.0" prefWidth="118.0" text="排行榜" />
+      <Label fx:id="userLabel" layoutX="138.0" layoutY="552.0" prefHeight="35.0" prefWidth="143.0" text="user_lable" />
     </children>
 </AnchorPane>

@@ -25,10 +25,13 @@ import java.io.IOException;
         @FXML
         private TextField userPwd;
 
+        public static String userName=null;
+
         @FXML
         void loginConfirmBtn(ActionEvent event) {
          String user,password;
          user=userId.getText();
+         userName=user;
          password=userPwd.getText();
          UserDAO userDAO=new UserDAO();
 
@@ -52,6 +55,7 @@ import java.io.IOException;
          }
             Alert alert =new Alert(Alert.AlertType.INFORMATION);
             alert.setContentText("登录成功");
+            System.out.println("--login success--");
             alert.show();
             Stage stage=(Stage) loginConfirm.getScene().getWindow();
             stage.close();

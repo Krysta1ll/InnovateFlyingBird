@@ -66,7 +66,10 @@ finally {
             ResultSet rs = pstmt.executeQuery(sql);
             while (rs.next()){
                 String ans=rs.getString(info);
-         System.out.println(ans);
+                int score=rs.getInt(info);
+
+         System.out.println("已获取"+ans);
+                return score;
 
             }
         } catch (SQLException e) {

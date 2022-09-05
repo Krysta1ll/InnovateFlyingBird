@@ -31,7 +31,7 @@
       <Button fx:id="loginBtn" layoutX="558.0" layoutY="159.0" mnemonicParsing="false" onAction="#loginButton" prefHeight="65.0" prefWidth="130.0" text="登录" />
       <Button fx:id="exitBtn" layoutX="557.0" layoutY="353.0" mnemonicParsing="false" onAction="#exitButton" prefHeight="65.0" prefWidth="130.0" text="退出" />
       <Button fx:id="regBtn" layoutX="556.0" layoutY="254.0" mnemonicParsing="false" onAction="#regButton" prefHeight="65.0" prefWidth="130.0" text="注册" />
-      <Label layoutX="37.0" layoutY="445.0" prefHeight="29.0" prefWidth="118.0" text="v0.0.2 a  @Krystall" />
+      <Label layoutX="37.0" layoutY="445.0" prefHeight="29.0" prefWidth="118.0" text="v1.0.0 b  @Krystall" />
       <Label layoutX="37.0" layoutY="541.0" prefHeight="29.0" prefWidth="118.0" text="用户未登录" textFill="#ee0303" />
    </children>
 </AnchorPane>
