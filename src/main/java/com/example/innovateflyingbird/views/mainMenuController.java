@@ -42,6 +42,7 @@ public class mainMenuController {
             AnchorPane anchorPane= FXMLLoader.load(this.getClass().getResource("loginView.fxml"));
             Scene scene=new Scene(anchorPane);
             loginStage.setScene(scene);
+            loginStage.setTitle("登录");
             loginStage.show();
         } catch (IOException e) {
             e.printStackTrace();
@@ -55,6 +56,7 @@ public class mainMenuController {
             AnchorPane anchorPane= FXMLLoader.load(this.getClass().getResource("regView.fxml"));
             Scene scene=new Scene(anchorPane);
             regStage.setScene(scene);
+            regStage.setTitle("注册");
             regStage.show();
         } catch (IOException e) {
             e.printStackTrace();

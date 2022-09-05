@@ -1,4 +1,4 @@
-package com.example.innovateflyingbird;
+package com.example.innovateflyingbird.views;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
@@ -8,12 +8,11 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 
-public class mainApplication extends Application {
-    @Override
+public class test extends Application {
     public void start(Stage stage) throws IOException {
-        AnchorPane anchorPane=FXMLLoader.load(this.getClass().getResource("views/mainMenu.fxml"));
+        AnchorPane anchorPane= FXMLLoader.load(this.getClass().getResource("Ranking.fxml"));
         Scene scene = new Scene(anchorPane);
-        scene.getStylesheets().addAll(this.getClass().getResource("views/style.css").toExternalForm());
+
         stage.setTitle("InnovateFlyingBird登录器");//设置游戏标题
 
 

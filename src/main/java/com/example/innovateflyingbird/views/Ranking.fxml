@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.innovateflyingbird.views.rankingController">
+   <children>
+      <SplitPane layoutX="-12.0" layoutY="-13.0" prefHeight="617.0" prefWidth="821.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+               <children>
+                  <TableView fx:id="rankingList" layoutX="11.0" layoutY="93.0" prefHeight="524.0" prefWidth="817.0">
+                    <columns>
+                      <TableColumn fx:id="userNameCol" prefWidth="395.457480430603" text="用户名" />
+                      <TableColumn fx:id="scoreCol" minWidth="1.29840087890625" prefWidth="416.0424499511719" text="分数" />
+                    </columns>
+                  </TableView>
+                  <ImageView fitHeight="82.0" fitWidth="811.0" layoutX="11.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true" />
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+</AnchorPane>

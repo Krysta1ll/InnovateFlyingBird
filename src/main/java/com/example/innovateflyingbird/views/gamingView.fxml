@@ -37,5 +37,6 @@
             <Font size="19.0" />
          </font>
       </Label>
+      <Button layoutX="632.0" layoutY="148.0" mnemonicParsing="false" onAction="#rankingList" prefHeight="49.0" prefWidth="118.0" text="排行榜" />
     </children>
 </AnchorPane>

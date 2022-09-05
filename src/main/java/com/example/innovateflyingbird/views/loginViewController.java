@@ -39,10 +39,16 @@ import java.io.IOException;
                  AnchorPane anchorPane = FXMLLoader.load(this.getClass().getResource("gamingView.fxml"));
                  Scene scene = new Scene(anchorPane);
                  gaming.setScene(scene);
+                 gaming.setTitle("InnovateFlyingBird(线上)");
                  gaming.show();
              } catch (IOException e) {
                  e.printStackTrace();
              }
+         }else{
+             Alert alert =new Alert(Alert.AlertType.ERROR);
+             alert.setContentText("用戶名或密碼錯誤或用户不存在");
+             alert.show();
+             return;
          }
             Alert alert =new Alert(Alert.AlertType.INFORMATION);
             alert.setContentText("登录成功");
